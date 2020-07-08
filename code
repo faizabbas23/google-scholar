@@ -1,0 +1,11 @@
+import webbrowser, sys
+import random
+import time
+
+while True:
+    
+    len(sys.argv) >1
+    search = ''.join(sys.argv[1:])
+    search = random.choice (["phyiscs","philosphy","chemistry","enviorment","cancer","health","techonogly"])
+    webbrowser.open_new_tab('https://scholar.google.com/scholar?hl=en&as_sdt=0%2C44&q=' + search)
+    time.sleep(86400)
